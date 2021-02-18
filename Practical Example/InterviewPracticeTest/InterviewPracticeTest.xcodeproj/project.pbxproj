@@ -17,6 +17,9 @@
 		33FC9D6325DDAABD005FEC04 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D6125DDAABD005FEC04 /* TutorialCollectionViewCell.swift */; };
 		33FC9D6A25DDADCD005FEC04 /* SelfConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D6925DDADCD005FEC04 /* SelfConfigurable.swift */; };
 		33FC9D7225DDB272005FEC04 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D7125DDB272005FEC04 /* UIView+Layout.swift */; };
+		33FC9D7725DDDF8A005FEC04 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D7625DDDF8A005FEC04 /* CardView.swift */; };
+		33FC9D7D25DDE44C005FEC04 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D7C25DDE44C005FEC04 /* Tutorial.swift */; };
+		33FC9D8325DDEA51005FEC04 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC9D8225DDEA51005FEC04 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		33FC9D6125DDAABD005FEC04 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		33FC9D6925DDADCD005FEC04 /* SelfConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfigurable.swift; sourceTree = "<group>"; };
 		33FC9D7125DDB272005FEC04 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		33FC9D7625DDDF8A005FEC04 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		33FC9D7C25DDE44C005FEC04 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		33FC9D8225DDEA51005FEC04 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		33FC9D5E25DDAA4F005FEC04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				33FC9D7C25DDE44C005FEC04 /* Tutorial.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				33FC9D6125DDAABD005FEC04 /* TutorialCollectionViewCell.swift */,
+				33FC9D7625DDDF8A005FEC04 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 		33FC9D6025DDAA5A005FEC04 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				33FC9D8225DDEA51005FEC04 /* Networking.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -335,10 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FC9D7725DDDF8A005FEC04 /* CardView.swift in Sources */,
 				33FC9D6325DDAABD005FEC04 /* TutorialCollectionViewCell.swift in Sources */,
 				33FC9D1925DDA416005FEC04 /* MainViewController.swift in Sources */,
+				33FC9D8325DDEA51005FEC04 /* Networking.swift in Sources */,
 				33FC9D7225DDB272005FEC04 /* UIView+Layout.swift in Sources */,
 				33FC9D1525DDA416005FEC04 /* AppDelegate.swift in Sources */,
+				33FC9D7D25DDE44C005FEC04 /* Tutorial.swift in Sources */,
 				33FC9D6A25DDADCD005FEC04 /* SelfConfigurable.swift in Sources */,
 				33FC9D1725DDA416005FEC04 /* SceneDelegate.swift in Sources */,
 			);
