@@ -110,7 +110,32 @@ class TutorialCollectionViewCell: UICollectionViewCell {
   }
   
   private func setupLayout() {
+    cardView.anchor(top: layoutMarginsGuide.topAnchor,
+                    leading: layoutMarginsGuide.leadingAnchor,
+                    bottom: layoutMarginsGuide.bottomAnchor,
+                    trailing: layoutMarginsGuide.trailingAnchor)
+    
+    parentStackView.anchor(top: cardView.topAnchor,
+                           leading: cardView.leadingAnchor,
+                           bottom: cardView.bottomAnchor,
+                           trailing: cardView.trailingAnchor,
+                           padding: UIEdgeInsets(top: cardView.layoutMargins.top,
+                                                 left: cardView.layoutMargins.bottom,
+                                                 bottom: -cardView.layoutMargins.top,
+                                                 right: -cardView.layoutMargins.top))
   }
+}
+
+extension TutorialCollectionViewCell: SelfConfigurable {
   
-  // var tutorialTypeName: UILabel!
+  typealias T = Tutorial
+  static let reuseIdentifier = String(describing: TutorialCollectionViewCell.self)
+
+  public func configure(with data: Tutorial) {
+    nameLabel.text = data.name
+    descriptionLabel.text = data.description
+    techLabel.text = "iOS 13, Swift 5"
+    contentTypeLabel.text = ContentType.article.rawValue
+  }
+
 }
